@@ -1,0 +1,151 @@
+# Ollama GUI User Manual
+
+## Table of Contents
+1. [Introduction](#introduction)
+2. [System Requirements](#system-requirements)
+3. [Getting Started](#getting-started)
+4. [User Interface Overview](#user-interface-overview)
+5. [Using the Application](#using-the-application)
+6. [Advanced Features](#advanced-features)
+7. [Troubleshooting](#troubleshooting)
+
+## Introduction
+
+Ollama GUI is a user-friendly desktop application that provides a graphical interface for interacting with local AI models using the Ollama platform. This manual will guide you through installing, setting up, and using the application effectively.
+
+## System Requirements
+
+### Minimum Requirements
+- Operating System: Windows, macOS, or Linux
+- Python Version: 3.7 or higher
+- RAM: 8 GB (16 GB recommended)
+- Disk Space: At least 30 GB for model downloads
+
+### Required Software
+- Python 3.7+
+- Ollama
+- PyQt5
+- ollama Python package
+- requests Python package
+
+## Getting Started
+
+### Installation Steps
+1. Install Ollama:
+   - macOS/Linux: Run `curl https://ollama.ai/install.sh | sh`
+   - Windows: Download and run the installer from the official Ollama website
+
+2. Install Python Dependencies:
+   ```bash
+   pip install PyQt5 ollama requests
+   ```
+
+3. Launch the Application:
+   ```bash
+   python ollama_python_gui.py
+   ```
+
+## User Interface Overview
+
+### Main Window Components
+1. **Toolbar**
+   - Initialize: Connect to Ollama and load models
+   - Refresh Models: Reload available models
+   - Pull New Model: Download additional AI models
+   - Clear: Reset input and output areas
+   - About: View application information
+
+2. **Model Selection Area**
+   - Dropdown to select active AI model
+   - Generate button to start AI text generation
+   - Stop button to interrupt generation
+
+3. **Input Area**
+   - Large text box for entering prompts
+   - Supports multi-line input
+
+4. **Output Area**
+   - Displays AI-generated responses
+   - Read-only text box
+   - Supports scrolling and text selection
+
+5. **Action Buttons**
+   - Save Output: Save generated text to a file
+   - Copy to Clipboard: Copy generated text
+
+## Using the Application
+
+### Initial Setup
+1. Click the "Initialize" button
+2. Wait for models to load
+3. If no models are found, use "Pull New Model"
+
+### Pulling a New Model
+1. Click "Pull New Model"
+2. Enter model name (e.g., qwen, phi4, llama2, mistral, gemma:2b)
+3. Click "Pull Model"
+4. Wait for download to complete
+
+### Generating Text
+1. Select a model from the dropdown
+2. Enter your prompt in the input area
+3. Click "Generate"
+4. Watch the output appear in real-time
+5. Use "Stop" button to interrupt generation if needed
+
+### Saving and Copying Output
+- Click "Save Output" to save text to a file
+- Click "Copy to Clipboard" to copy generated text
+
+## Advanced Features
+
+### Model Management
+- Supports multiple Ollama models
+- Dynamic model loading and refresh
+- Ability to download new models on-the-fly
+
+### Generation Control
+- Real-time streaming output
+- Ability to stop generation mid-process
+- Supports various model prompts and interactions
+
+## Troubleshooting
+
+### Common Issues
+1. **No Models Found**
+   - Ensure Ollama is running: `ollama serve`
+   - Check internet connection
+   - Verify Ollama installation
+
+2. **Connection Errors**
+   - Confirm Ollama service is active
+   - Check network settings
+   - Restart Ollama service
+
+3. **Package Installation**
+   - Use `pip install PyQt5 ollama requests`
+   - Ensure you have the latest versions
+   - Use virtual environments if needed
+
+### Error Messages
+- **"Ollama Not Running"**: Start Ollama service
+- **Package Import Errors**: Reinstall required packages
+- **Connection Refused**: Check Ollama server status
+
+## Tips and Recommendations
+
+- Start with smaller models for faster responses
+- Use clear, specific prompts
+- Experiment with different models
+- Keep your Ollama and Python packages updated
+
+## Support
+
+For additional support:
+- Visit Ollama official website
+- Check project GitHub repository
+- Contact: eswara.arun@gmail.com
+
+## License
+
+This application is distributed under the MIT License.
