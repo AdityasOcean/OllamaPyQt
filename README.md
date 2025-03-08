@@ -116,7 +116,7 @@ This project is licensed under the MIT License. See the LICENSE file for details
 
 Arun K Eswara
 - Email: eswara.arun@gmail.com
-- Project Link: https://github.com/yourusername/ollama-gui
+- Project Link: https://github.com/AdityasOcean/OllamaPyQt
 
 ## Acknowledgements
 
